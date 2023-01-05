@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 @font-face {
@@ -21,20 +21,21 @@ body {
   font-family: 'myfont2';
 }
 
-#btn_top{
+#btn_top {
   top: 470px;
   position: fixed;
-  right: -5%;
+  right: -15%;
   background-image: url(img/btn_top.png);
   width: 50px;
   height: 50px;
   background-size: cover;
-  display: block;
+  display: none;
   transition: all 0.5s;
   cursor: pointer;
   animation: arrowHover 2s infinite;
 }
-#btn_top:hover{
+
+#btn_top:hover {
   animation: none;
 }
 
@@ -61,7 +62,7 @@ body {
   width: 50%;
   height: 100%;
   position: absolute;
-  right: -50px;
+  right: -2%;
   display: flex;
 }
 
@@ -386,7 +387,7 @@ li:nth-child(2) {
   width: 350px;
   position: relative;
   top: 120px;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 #infor_informaition div {
@@ -399,8 +400,8 @@ li:nth-child(2) {
   left: 100px;
   top: 200px;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 23%;
+  height: 29.8%;
   background-color: brown;
   display: none;
 }
@@ -410,8 +411,8 @@ li:nth-child(2) {
   position: relative;
   top: 40px;
   left: 16%;
-  width: 200px;
-  height: 200px;
+  width: 67%;
+  height: 63%;
   background-color: black;
   border-radius: 50%;
 }
@@ -421,15 +422,15 @@ li:nth-child(2) {
   border-radius: 0 0 50% 50%;
   left: 13%;
   top: 80px;
-  width: 150px;
-  height: 125px;
+  width: 75%;
+  height: 56%;
   background-color: bisque;
 }
 
 #char_eye1 {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10%;
+  height: 9%;
   border-radius: 50%;
   background-color: black;
   left: 29%;
@@ -438,8 +439,8 @@ li:nth-child(2) {
 
 #char_eye2 {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10%;
+  height: 9%;
   border-radius: 50%;
   background-color: black;
   left: 63%;
@@ -448,8 +449,8 @@ li:nth-child(2) {
 
 #char_nose {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 10%;
+  height: 9%;
   border-radius: 20%;
   background-color: black;
   left: 47%;
@@ -461,7 +462,7 @@ li:nth-child(2) {
   font-size: 5em;
   color: #666;
   text-transform: uppercase;
-  top: 150px;
+  top: 70px;
   border-bottom: 10px solid #666;
   padding-bottom: 8px;
 }
@@ -473,12 +474,19 @@ li:nth-child(2) {
   text-transform: uppercase;
 }
 
+#infor_text {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 142px;
+}
+
 .infor_class_1 {
-  top: 100px;
+  top: 0px;
 }
 
 .infor_class_2 {
-  top: 330px;
+  top: 300px;
 }
 
 .infor_class_3 {
@@ -489,10 +497,6 @@ li:nth-child(2) {
   width: 40px;
   height: 40px;
   transform: rotate(90deg);
-  position: absolute;
-  transition: 2s;
-  top: 720px !important;
-  left: 180px !important;
   border-bottom: #007aff;
   border-right: #007aff;
 
@@ -502,20 +506,21 @@ li:nth-child(2) {
   width: 40px;
   height: 40px;
   animation: arrowHover 2s infinite;
-
+  position: absolute;
+  left: 30% !important;
+  top: 770px !important;
+  transition: 2s;
 }
 
 @keyframes arrowHover {
   1% {
     transform: translateY(-20px);
-    border-bottom-color: #6666;
-    border-right-color: #6666;
+
   }
 
   70% {
-    transform: translateY(none);
-    border-bottom-color: pink;
-    border-right-color: pink;
+    transform: translateY(1px);
+
   }
 }
 
@@ -592,7 +597,7 @@ li:nth-child(2) {
   height: 20px;
   background-color: rgba(90, 92, 92, 0.4);
   top: 30px;
-  left: 100px;
+  margin-left: 17.1%;
   border-radius: 50px;
 }
 
@@ -604,7 +609,7 @@ li:nth-child(2) {
   border-radius: 50px;
   position: absolute;
   top: 30px;
-  left: 100px;
+  margin-left: 17.1%;
 }
 
 /* skill 패이지 끝 */
@@ -630,7 +635,7 @@ li:nth-child(2) {
 #container_view {
   position: relative;
   width: 45%;
-  height: 80%;
+  height: 90%;
   margin: 0 auto;
 }
 
@@ -700,17 +705,20 @@ li:nth-child(2) {
   margin: 0 auto;
   position: relative;
 }
-#front_text{
-  
+
+#front_text {
+
   position: absolute;
 }
-#front_util{
+
+#front_util {
   width: 100%;
   position: absolute;
   height: 50px;
   top: 170px;
 }
-.git_java{
+
+.git_java {
   cursor: pointer;
   width: 20%;
   position: absolute;
@@ -719,25 +727,30 @@ li:nth-child(2) {
   transition: 0.5s;
 }
 
-.git_html{
+.git_html {
   cursor: pointer;
   width: 20%;
   position: absolute;
   left: 15%;
   transition: 0.5s;
 }
-.home{
+
+.home {
   cursor: pointer;
   width: 7%;
   position: absolute;
   left: 70%;
   transition: 05.s;
 }
-.git_java:hover,.git_html:hover,.home:hover{
+
+.git_java:hover,
+.git_html:hover,
+.home:hover {
   animation: clickOn 1s infinite;
- 
-  
+
+
 }
+
 #back {
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -800,7 +813,7 @@ li:nth-child(2) {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   top: 530px;
-  left: 135px !important;
+  left: 20% !important;
   width: 100%;
   position: absolute;
 }
@@ -815,62 +828,74 @@ li:nth-child(2) {
   top: 90px;
   left: 50px;
 }
+
 #aboutme_container {
   position: relative;
   width: 65%;
   top: 220px;
   height: 70%;
   margin: 0 auto;
-  
+
 }
-#aboutme_text{
+
+#aboutme_text {
   position: relative;
-    top: 20px;
-    width: 100%;
-    height: 35%;
+  top: 20px;
+  width: 100%;
+  height: 35%;
 }
-.span1,.span2,.span3{
+
+.span1,
+.span2,
+.span3 {
   position: absolute;
   transition: all 0.5s;
   display: none;
 }
-.span1{
+
+.span1 {
   left: 50%;
   margin-left: -100px;
   font-size: 40px;
 }
-.span2{
+
+.span2 {
   top: 60px;
   left: 50%;
   margin-left: -100px;
 }
-.span3{
+
+.span3 {
   top: 120px;
   left: 50%;
   margin-left: -100px;
 }
-#aboutme_contact{
+
+#aboutme_contact {
   width: 100%;
-    position: relative;
-    top: 10%;
-    height: 60%;
-    left: -150%;
-    transition: 0.5s;
+  position: relative;
+  top: 10%;
+  height: 60%;
+  left: -150%;
+  transition: 0.5s;
 }
-.aboutme_me{
+
+.aboutme_me {
   margin: 0 auto;
   line-height: 6;
   width: 58%;
   height: 80px;
   border-bottom: 1px solid gainsboro;
 }
-.aboutme_me img{
+
+.aboutme_me img {
   width: 40px;
   margin-right: 50px;
   animation: click 2s infinite;
   cursor: pointer;
 }
-.aboutme_me span{
+
+.aboutme_me span {
   margin-left: 60px;
 }
 
@@ -887,8 +912,475 @@ li:nth-child(2) {
 } */
 
 /* 반응형 */
-@media only screen and (max-width: 1300px){
-  #aboutme h1,#skill h1,#pot h1{
+@media only screen and (max-width: 1900px) {
+
+  /*1900px 반응형*/
+  #infor h1 {
+    font-size: 4em;
+
+  }
+
+  #infor span {
+    font-size: 3em;
+  }
+
+  #infor_informaition {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+
+  /*1600px 반응형*/
+  #infor h1 {
+    font-size: 3em;
+    top: 50px;
+  }
+
+  #infor span {
+    font-size: 2em;
+  }
+
+  #infor_informaition {
+    font-size: 15px;
+  }
+
+  .infor_class_2 {
+    top: 220px;
+  }
+
+  .infor_class_3 {
+    top: 320px;
+  }
+
+  .front_skills img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .back_skills img {
+    width: 60px;
+    height: 60px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  /*1300px 반응형*/
+  #header .khs {
+    display: none;
+  }
+
+  #header ul {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    display: flex;
+  }
+
+  #header ul li {
+    margin-right: 20%;
+  }
+
+  #aboutme h1,
+  #skill h1,
+  #pot h1 {
     font-size: 35px;
+  }
+
+  .front_skills img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .back_skills img {
+    width: 45px;
+    height: 45px;
+  }
+
+  #skill_graph {
+    top: 20px;
+    width: 90%;
+    height: 15px;
+  }
+
+  .skill_graph_percent {
+    top: 20px;
+    height: 15px;
+  }
+
+  #skill_graph_html {
+    width: 80% !important;
+  }
+
+  #skill_graph_css {
+    width: 80% !important;
+  }
+
+  #skill_graph_javascript {
+    width: 75% !important;
+  }
+
+  #skill_graph_jquery {
+    width: 75% !important;
+  }
+
+  #skill_graph_java {
+    width: 80% !important;
+  }
+
+  #skill_graph_jsp {
+    width: 70% !important;
+  }
+
+  #skill_graph_mysql {
+    width: 65% !important;
+  }
+
+  #skill_graph_php {
+    width: 60% !important;
+  }
+
+  #skill_graph_node {
+    width: 65% !important;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 38% !important;
+  }
+
+  #container_view {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #pot_btn_left {
+    left: -10%;
+  }
+
+  #pot_btn_right {
+    right: -10%;
+  }
+
+  #aboutme_contact{
+    font-size: 15px;
+  }
+  .aboutme_me img{
+    width: 35px;
+  }
+  .aboutme_me{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .aboutme_me{
+    width: 80%;
+  }
+  .aboutme_me img{
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+
+  /*1000px 반응형*/
+  #infor_text {
+    left: -5%;
+  }
+
+  #aboutme h1,
+  #skill h1,
+  #pot h1 {
+    font-size: 32px;
+  }
+
+  #btn_top {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px)) !important;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  /*850px 반응형*/
+  #aboutme h1,
+  #skill h1,
+  #pot h1 {
+    font-size: 30px;
+  }
+
+  #infor_text {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 270px;
+    left: -15%;
+  }
+
+  .infor_util {
+    left: -20% !important;
+    top: 870px !important;
+  }
+
+  #char_back {
+    left: 50px;
+    height: 15%;
+  }
+
+  #char_head {
+    top: 40px;
+    height: 57%;
+  }
+
+  #char_face {
+    height: 56%;
+    top: 34px;
+  }
+
+  #char_eye1 {
+    top: 45px;
+  }
+
+  #char_eye2 {
+    top: 45px;
+  }
+
+  #char_nose {
+    top: 55px;
+  }
+
+  .front_skills img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .back_skills img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #skill_graph {
+    top: 18px;
+    height: 10px;
+  }
+
+  .skill_graph_percent {
+    top: 18px;
+    height: 10px;
+  }
+  .aboutme_me{
+    width: 93%;
+  }
+  .aboutme_me img{
+    width: 28px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+
+  /*730px 반응형*/
+  #infor_text {
+    left: -40%;
+  }
+
+  #char_back {
+    left: 10px;
+  }
+
+  .infor_util {
+    left: -35% !important;
+  }
+
+  #infor h1 {
+    font-size: 2.5em;
+    top: 35px;
+  }
+
+  #infor span {
+    font-size: 1.5em;
+  }
+
+  #infor_informaition {
+    font-size: 13px;
+  }
+
+  .infor_class_2 {
+    top: 170px;
+  }
+
+  .infor_class_3 {
+    top: 240px;
+  }
+
+  #infor_informaition {
+    top: 50px;
+  }
+
+  #infor_informaition div {
+    margin-top: 10px;
+  }
+
+  #header ul li {
+    font-size: 20px;
+  }
+
+  #btn_top {
+    width: 35px;
+    height: 35px;
+  }
+
+  #container_view {
+    width: 100%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 31% !important;
+  }
+
+  .git_java {
+    width: 25%;
+  }
+
+  .git_html {
+    width: 25%;
+  }
+
+  .home {
+    width: 10%;
+  }
+
+  #pot_btn_left {
+    width: 23px;
+    height: 23px;
+  }
+
+  #pot_btn_right {
+    width: 23px;
+    height: 23px;
+  }
+  .aboutme_me{
+    width: 108%;
+  }
+  .aboutme_me span {
+    margin-left: 25px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+  #aboutme h1,
+  #skill h1,
+  #pot h1 {
+    font-size: 25px;
+  }
+
+  #infor_text {
+    left: -127%;
+    width: 120%;
+  }
+
+  #char_back {
+    left: 75px;
+    top: 500px;
+  }
+
+  .infor_util {
+    left: -48% !important;
+  }
+
+  #header ul {
+    left: 62%;
+  }
+
+  .git_java {
+    width: 30%;
+    left: 35%;
+  }
+
+  .git_html {
+    width: 30%;
+  }
+
+  .home {
+    width: 14%;
+  }
+  .aboutme_me{
+    width: 105%;
+  }
+  .aboutme_me span {
+    margin-left: -15px;
+}
+.span2{
+  top: 70px !important;
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .infor_util {
+    left: -75% !important;
+    top: 910px !important;
+  }
+
+  #header ul li {
+    font-size: 15px;
+  }
+
+  #header ul {
+    left: 68%;
+  }
+
+  #btn_top {
+    width: 30px;
+    height: 30px;
+    right: 3%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 25% !important;
+  }
+
+  #pot_btn_left {
+    width: 17px;
+    height: 17px;
+  }
+
+  #pot_btn_right {
+    width: 17px;
+    height: 17px;
+  }
+
+  .swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 7px)) !important;
+    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 7px)) !important;
+  }
+  .span2{
+    top: 80px !important;
   }
 }
