@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ktiger1017_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <div id="btn_top" onclick="btn_top()">
+
+    </div>
+
+    <div id="header">
+
+        <span class="khs">KHS's portfolio</span>
+
+        <ul>
+            <li onclick="info()">
+                about
+            </li>
+            <li onclick="skill()">
+                skill
+            </li>
+            <li onclick="port()">
+                portfolio
+            </li>
+            <li onclick="contact()">
+                about me
+            </li>
+        </ul>
+
+    </div>
+    <div id="open">
+        <div class="start">
+
+            <div class="envelope">
+                <div class="paper">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="noti">1</div>
+                </div>
+            </div>
+
+            <div class="open"></div>
+
+            <div class="go_hide">
+                <a href="javascript:" class="go_hide_a">Click ME!</a>
+            </div>
+        </div>
+    </div>
+    <div id="hide" class="swiper MySwiper">
+
+        <div id="hide_wrap" class="swiper-wrapper">
+
+            <div id="infor" class="swiper-slide">
+                <div id="char_back">
+                    <div id="char_head">
+                        <div id="char_face"></div>
+                        <div id="char_eye1"></div>
+                        <div id="char_eye2"></div>
+                        <div id="char_nose"></div>
+                    </div>
+                    <div id="infor_informaition">
+                        <div class="ktiger1017">
+                            <div>이름</div>
+                            <div>김현서</div>
+                        </div>
+                        <div class="ktiger1017">
+                            <div>생년월일</div>
+                            <div>2000.10.17</div>
+                        </div>
+                        <div class="ktiger1017">
+                            <div>연락처</div>
+                            <div>+82 10-8627-6478</div>
+                        </div>
+                        <div class="ktiger1017">
+                            <div>이메일</div>
+                            <div>ktiger1017@naver.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="infor_container">
+
+
+                    <span class="infor_class_1">안녕하세요!</span>
+
+                    <h1>text</h1>
+
+                    <span class="infor_class_2">프론트엔드 개발자</span>
+                    <span class="infor_class_3">김현서 입니다.</span>
+
+                    <div class="infor_util">
+                        <div class="arrow swiper-button-next"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="skill" class="swiper-slide">
+                <h1>Skill</h1>
+                <div id="skill_container">
+                    <div id="skill_front">
+
+                        <div id="html" class="front_skills">
+                            <img src="img/html12.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_html" class="skill_graph_percent"></div>
+                        </div>
+
+                        <div id="css" class="front_skills">
+                            <img src="img/css.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_css" class="skill_graph_percent"></div>
+                        </div>
+
+                        <div id="javascript" class="front_skills">
+                            <img src="img/javascript.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_javascript" class="skill_graph_percent"></div>
+                        </div>
+
+                        <div id="jquery" class="front_skills">
+                            <img src="img/jquery (2).png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_jquery" class="skill_graph_percent"></div>
+                        </div>
+
+                    </div>
+                    <div id="skill_back">
+                        <div id="java" class="back_skills">
+                            <img src="img/java.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_java" class="skill_graph_percent"></div>
+                        </div>
+                        <div id="jsp" class="back_skills">
+                            <img src="img/jsp.jpg" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_jsp" class="skill_graph_percent"></div>
+                        </div>
+                        <div id="mysql" class="back_skills">
+                            <img src="img/mysql.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_mysql" class="skill_graph_percent"></div>
+                        </div>
+
+                        <div id="php" class="back_skills">
+                            <img src="img/php.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_php" class="skill_graph_percent"></div>
+                        </div>
+
+                        <div id="node" class="back_skills">
+                            <img src="img/node.png" alt="">
+                            <div id="skill_graph"></div>
+                            <div id="skill_graph_node" class="skill_graph_percent"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pot" class="swiper-slide">
+                <h1>portfolio</h1>
+                <div id="pot_container">
+                    <div id="container_view" class="PotSwiper">
+
+                        <div id="container_view_wrap" class="swiper-wrapper">
+
+                            <div id="view_1" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted>
+                                                <source src="img/game.mp4" type="video/mp4">
+
+                                            </video>
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                                <h2>메이플스토리</h2>
+                                                <span>자바를 이용하여 메이플스토리 게임 구현</span>
+                                            </div>
+                                            
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/game-pot/tree/master/GameProject"target='_blank'><img src="img/github.png" alt="" class="git_java"></a>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                            <div id="view_2" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted>
+                                                <source src="img/movie.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                                <h2>영화관리 프로그램</h2>
+                                            <span>자바를 이용하여 영화관리 프로그램 개발</span>
+                                            <p>회원가입 GUi 개발, csv파일을 활용한 회원관리 개발 </p>
+                                            </div>
+                                            
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/movie-pot" target='_blank'><img src="img/github.png" alt="" class="git_java"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+                            </div>
+
+                            <div id="view_3" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted>
+                                                <source src="img/soccer.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                                <h2>선수관리 프로그램</h2>
+                                            <span>자바를 이용하여 선수관리 프로그램 개발</span>
+                                            <p>db를 사용하여 효율적으로 관리</p>
+                                            </div>
+                                            
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/soccer-pot" target='_blank'><img src="img/github.png" alt="" class="git_java"></a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+                            </div>
+
+                            <div id="view_4" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted class="shop1">
+                                                <source src="img/shop.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                            <h2>쇼핑몰 프로그램</h2>
+                                            <span>jsp를 이용하여 쇼핑몰 프로그램 개발</span>
+                                        </div>
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/shopping_pot" target='_blank'><img src="img/github.png" alt="" class="git_java"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                            <div id="view_5" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted class="shop1">
+                                                <source src="img/christmas.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                            <h2>크리스마스 사이트 제작</h2>
+                                            <span>html,css,javascript를 활용하여 제작</span>
+                                        </div>
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/christmas-pot" target='_blank'><img src="img/github.png" alt="" class="git_html"></a>
+                                                <a href="https://ktiger1017.github.io/christmas-pot/" target='_blank'><img src="img/home.png" alt="" class="home"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                            <div id="view_6" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted class="shop1">
+                                                <source src="img/coffee.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                            <h2>하삼동 커피</h2>
+                                            <span>하삼동 커피 클론코딩</span>
+                                        </div>
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/hasamdong-pot" target='_blank'><img src="img/github.png" alt="" class="git_html"></a>
+                                                <a href="https://ktiger1017.github.io/hasamdong-pot/" target='_blank'><img src="img/home.png" alt="" class="home"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                            <div id="view_7" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted class="shop1">
+                                                <source src="img/posco.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                            <h2>포스코</h2>
+                                            <span>포스코 클론 코딩</span>
+                                        </div>
+                                            <div id="front_util">
+                                                <a href=""><img src="img/github.png" alt="" class="git_html" target='_blank'></a>
+                                                <a href=""><img src="img/home.png" alt="" class="home" target='_blank'></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                            <div id="view_8" class="swiper-slide">
+
+                                <div id="port_info">
+                                    <div id="front">
+                                        <div id="front_img">
+                                            <video autoplay="autoplay" loop muted class="shop1">
+                                                <source src="img/ktiger1017.mp4" type="video/mp4">
+                                            </video>
+
+                                        </div>
+                                        <div id="front_information">
+                                            <div id="front_text">
+                                            <h2>ktiger1017</h2>
+                                            <span>포트폴리오 페이지 제작</span>
+                                        </div>
+                                            <div id="front_util">
+                                                <a href="https://github.com/ktiger1017/ktiger1017-pot" target='_blank'><img src="img/github.png" alt="" class="git_html"></a>
+                                                <a href="https://ktiger1017.github.io/ktiger1017-pot/" target='_blank'><img src="img/home.png" alt="" class="home"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="back"></div>
+                                </div>
+
+                                <div id="port_util"></div>
+
+                            </div>
+
+                        </div>
+                        <div class="PotSwiper-button-next"></div>
+                        <div class="PotSwiper-button-prev"></div>
+                        <div class="PotSwiper-pagination"></div>
+                    </div>
+                    <div id="pot_btn_left" class="swiper-button-left"></div>
+                    <div id="pot_btn_right" class="swiper-button-right"></div>
+                </div>
+            </div>
+            <div id="aboutme" class="swiper-slide">
+                <h1>about me</h1>
+                <div id="aboutme_container">
+                    <div id="aboutme_text">
+                    <span class="span1">안녕하세요</span>
+                    <span class="span2">프론트엔드 개발자 김현서 입니다</span>
+                    <span class="span3">항상 배우는 자세로 함께 성장하고 싶습니다</span>
+                    </div>
+                    <div id="aboutme_contact">
+                        <div id="aboutme_phone" class="aboutme_me">
+                            <img src="img/phone.png" alt="">
+                            <span>010-8627-6478</span>
+                        </div>
+                        <div id="aboutme_git"class="aboutme_me">
+                             <a href="https://github.com/ktiger1017" target="_blank"><img src="img/git.png" alt=""></a>
+                            <span>김현서의 <a href="https://github.com/ktiger1017" target="_blank" style="cursor: pointer;"> github</a></span>
+                        </div>
+                        <div id="aboutme_mail" class="aboutme_me"> 
+                            <img src="img/email.png" alt="">
+                            <span>ktiger1017@naver.com</span>
+                        </div>
+                        <div id="aboutme_kakao" class="aboutme_me">
+                            <a href="http://qr.kakao.com/talk/3PKqNkn3TmOtLlytCxBYWoidKnY-" target="_blank"><img src="img/talk.png" alt=""></a>
+                            <span> <a href="http://qr.kakao.com/talk/3PKqNkn3TmOtLlytCxBYWoidKnY-" target="_blank" style="cursor: pointer;">kakao talk</a> </span>
+                            
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+
+    <!-- <div id="footer" class="swiper-slide">
+            <span>coded by </span>
+            <span onclick="info()" style="color:cornflowerblue;">ktiger1017</span>
+    </div> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+
+        var MySwiper = new Swiper(".MySwiper", {  // 전체 페이지 슬라이드 Swiper
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            speed: 1000,
+            mousewheel: true,
+            touchRatio: 0,//드래그 금지
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // on: {
+            //     reachEnd: function () {
+
+            //         MySwiper.mousewheel.disable();
+            //     }
+            // }
+        });
+      
+        var PotSwiper = new Swiper(".PotSwiper", {  //3페이지 포트폴리오 슬라이드 Swiper
+            slidesPerView: 1,
+            spaceBetween: 30,
+            touchRatio: 0,//드래그 금지
+            loop: true,
+            pagination: {
+                el: ".PotSwiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-right",
+                prevEl: ".swiper-button-left",
+            },
+        });
+
+        MySwiper.on('transitionEnd', function () {
+            let index = MySwiper.realIndex;
+            if (index == 1) {
+                $("#skill_graph_html").css("width", "510px");
+                $("#skill_graph_css").css("width", "510px");
+                $("#skill_graph_javascript").css("width", "450px");
+                $("#skill_graph_jquery").css("width", "440px");
+
+                $("#skill_graph_java").css("width", "490px");
+                $("#skill_graph_jsp").css("width", "410px");
+                $("#skill_graph_mysql").css("width", "390px");
+                $("#skill_graph_php").css("width", "370px");
+                $("#skill_graph_node").css("width", "420px");
+            }
+
+        });
+
+        MySwiper.on('transitionEnd', function () {
+            let index = MySwiper.realIndex;
+            if(index>0){
+                $("#btn_top").css("right","6%");
+            }
+            else{
+                $("#btn_top").css("right","-10%");
+            }
+        });
+
+        MySwiper.on('transitionEnd', function () {
+            let index = MySwiper.realIndex;
+            if(index==3){
+                setTimeout(() => {
+                    $(".span1").slideDown(500);
+                }, 500);
+                setTimeout(() => {
+                    $(".span2").slideDown(500);
+                }, 700);
+                setTimeout(() => {
+                    $(".span3").slideDown(500);
+                }, 900);
+
+                setTimeout(() => {
+                    $("#aboutme_contact").css("left","0px");
+                }, 1200);
+            }
+            });
+
+        function btn_top(){
+            MySwiper.slideTo(0,1500);
+        }
+
+        function skill() {
+            $("#skill_graph_html").css("width", "510px");
+            $("#skill_graph_css").css("width", "510px");
+            $("#skill_graph_javascript").css("width", "450px");
+            $("#skill_graph_jquery").css("width", "440px");
+
+            $("#skill_graph_java").css("width", "490px");
+            $("#skill_graph_jsp").css("width", "410px");
+            $("#skill_graph_mysql").css("width", "390px");
+            $("#skill_graph_php").css("width", "370px");
+            $("#skill_graph_node").css("width", "420px");
+        }
+
+        $('.go_hide').on('click', function () {
+            $('.start').addClass('is-active');
+            $(this).remove();
+        });
+
+        let flag = false;
+
+        $(".go_hide").click(function () {
+            flag = true;
+            setTimeout(() => {
+                // $(".start").css("display","none");
+                // $("#hide").css("display","block");    
+                $(".start").fadeOut(500);
+                $("#open").css("width", "200px");
+                $("#open").css("height", "200px");
+                $("#open").fadeOut(500);
+                $("html,body").css("background-color", "white");
+                $("#footer").css("display","block");
+            }, 3000);
+
+            setTimeout(() => {
+                $("#hide").fadeIn(900);
+                $("#hide").css("width", "70%");
+                $("#hide").css("height", "100%");
+                $("#header").slideDown(500);
+                text();
+            }, 3500);
+
+            setTimeout(() => {
+                $("#char_back").slideDown(500);
+            }, 3700);
+        });
+
+
+
+
+        function text() {
+
+            var dataText = ["항상 배우는", "긍정적으로 생각하는", "소통하는"];
+
+            function typeWriter(text, i, fnCallback) {
+
+                if (i < (text.length)) {
+                    document.querySelector("h1").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+
+                    setTimeout(function () {
+                        typeWriter(text, i + 1, fnCallback)
+                    }, 150);
+                }
+                // text finished, call callback if there is a callback function
+                else if (typeof fnCallback == 'function') {
+                    // call callback after timeout
+                    setTimeout(fnCallback, 2500);
+                }
+            }
+
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+                if (typeof dataText[i] == 'undefined') {
+                    setTimeout(function () {
+                        StartTextAnimation(0);
+                    }, 20000);
+                }
+                // check if dataText[i] exists
+                if (i < dataText[i].length) {
+                    // text exists! start typewriter animation
+                    typeWriter(dataText[i], 0, function () {
+                        // after callback (and whole text has been animated), start next text
+                        StartTextAnimation(i + 1);
+                    });
+                }
+            }
+            // start the text animation
+               StartTextAnimation(0);
+        }
+
+        function info() {
+            MySwiper.slideTo(0, 1500);
+        }
+
+        function skill() {
+            MySwiper.slideTo(1, 1500);
+        }
+
+        function port() {
+            MySwiper.slideTo(2, 1500);
+        }
+
+        function contact() {
+            MySwiper.slideTo(3, 1500);
+        }
+
+        $("#container_view .swiper-slide").click(function () {
+
+
+            $(this).toggleClass(".flipped");
+        });
+
+       
+    </script>
+
+</body>
+
+</html>

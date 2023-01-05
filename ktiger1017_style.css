@@ -1,0 +1,894 @@
+* {
+  box-sizing: border-box;
+  text-decoration : none;
+}
+
+@font-face {
+  font-family: 'myFont';
+  src: url('font/Cafe24Danjunghae.ttf');
+}
+
+@font-face {
+  font-family: 'myFont2';
+  src: url('font/Cafe24Simplehae.ttf');
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #323641;
+  font-family: 'myfont2';
+}
+
+#btn_top{
+  top: 470px;
+  position: fixed;
+  right: -5%;
+  background-image: url(img/btn_top.png);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  display: block;
+  transition: all 0.5s;
+  cursor: pointer;
+  animation: arrowHover 2s infinite;
+}
+#btn_top:hover{
+  animation: none;
+}
+
+#header {
+  top: 0px;
+  font-family: 'myfont2';
+  z-index: 1000000;
+  width: 100%;
+  height: 100px;
+  background-color: mistyrose;
+  position: fixed;
+  display: none;
+}
+
+#header .khs {
+  position: absolute;
+  left: 300px;
+  top: 30px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+#header ul {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: -50px;
+  display: flex;
+}
+
+#header ul li {
+  background-color: transparent;
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  list-style: none;
+  margin-right: 30px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+#header ul li a {
+  background-color: transparent;
+  box-shadow: none;
+  font-family: 'myfont2';
+  color: black;
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 15px;
+}
+
+#open {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.start {
+  display: block;
+  top: 350px;
+  width: 130px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  transition: 0.5s;
+}
+
+.envelope {
+  background: #ca336d;
+  width: 100%;
+  height: 80px;
+  position: relative;
+  box-shadow: 0 5px 0 #3a3d3c;
+  margin: 85px 0 30px 0;
+  z-index: 1;
+}
+
+.envelope:before,
+.envelope:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+}
+
+.envelope:before {
+  right: 0;
+  border-bottom: 0px solid transparent;
+  border-top: 80px solid transparent;
+  border-right: 130px solid #dc447f;
+  z-index: 1;
+}
+
+.envelope:after {
+  left: 0;
+  border-bottom: 0px solid transparent;
+  border-top: 80px solid transparent;
+  border-left: 130px solid #ea4c89;
+  z-index: 1;
+}
+
+.open {
+  border-right: 65px solid transparent;
+  border-top: 40px solid #c8336c;
+  border-left: 65px solid transparent;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transform-origin: 0% 0%;
+}
+
+.paper {
+  width: 110px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -55px;
+  background: #f2f2f2;
+  z-index: 0;
+}
+
+.paper:before {
+  content: "";
+  position: absolute;
+}
+
+.paper:before {
+  width: 110px;
+  height: 75px;
+  background: rgba(177, 177, 177, 0.1);
+  bottom: 0;
+  left: 0;
+}
+
+.noti {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  color: #fff;
+  font: bold 20px/36px "Helvetica";
+  text-align: center;
+  background: #2ecc71;
+  box-shadow: 0 4px 0 rgba(216, 217, 216, 0.7);
+  opacity: 0;
+}
+
+ul {
+  margin: 25px auto 0 auto;
+  padding: 0;
+  display: block;
+  width: 80%;
+}
+
+li {
+  list-style: none;
+  background: #d3d3d3;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+li:nth-child(1) {
+  width: 50%;
+}
+
+li:nth-child(2) {
+  margin-bottom: 20px;
+  width: 20%;
+}
+
+.go_hide {
+  left: 7px;
+  width: 120px;
+  height: 30px;
+  background: #878387;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font: bold 13px "myFont2";
+  padding: 8px 15px;
+  animation: click 2s infinite;
+  position: relative;
+}
+
+.go_hide a {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font: bold 17px "myFont2";
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.go_hide:active,
+.go_hide:hover {
+  animation: clickOn 1s infinite;
+  background-color: #878387;
+}
+
+
+/* TRIGGER ANIMATIONS */
+.is-active .open {
+  animation: foldUp 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.is-active .paper {
+  animation: paperUp 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  /* W3C and Opera */
+}
+
+.is-active .noti {
+  animation: noti 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  /* W3C and Opera */
+}
+
+/* ANIMATIONS */
+@keyframes foldUp {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(180deg);
+    z-index: 0;
+  }
+}
+
+@keyframes noti {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes paperUp {
+  from {
+    height: 75px;
+  }
+
+  60% {
+    height: 130px;
+  }
+
+  70% {
+    height: 110px;
+  }
+
+  80% {
+    height: 130px;
+  }
+
+  90% {
+    height: 120px;
+  }
+
+  100% {
+    height: 130px;
+  }
+}
+
+@keyframes click {
+  25% {
+    transform: scale(0.9, 1.1);
+
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+
+  }
+}
+
+@keyframes clickOn {
+  25% {
+    transform: scale(0.9, 1.1);
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: scale(1.1, 0.9);
+    transform: rotate(-8deg);
+  }
+
+  75% {
+    transform: scale(0.95, 1.05);
+    transform: rotate(0deg);
+  }
+}
+
+#hide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+#infor,
+#skill,
+#pot,
+#aboutme {
+  width: 100%;
+  height: 100%;
+  background-color: #faf5e6;
+  position: relative;
+}
+
+#infor {
+  height: 100%;
+  font-family: 'myFont2';
+}
+
+#infor_container {
+  top: -210px;
+  left: 200px;
+  width: 50%;
+  height: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#infor_informaition {
+  width: 350px;
+  position: relative;
+  top: 120px;
+  font-size: 20px !important;
+}
+
+#infor_informaition div {
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#char_back {
+  left: 100px;
+  top: 200px;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: brown;
+  display: none;
+}
+
+#char_head {
+
+  position: relative;
+  top: 40px;
+  left: 16%;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+#char_face {
+  position: absolute;
+  border-radius: 0 0 50% 50%;
+  left: 13%;
+  top: 80px;
+  width: 150px;
+  height: 125px;
+  background-color: bisque;
+}
+
+#char_eye1 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  left: 29%;
+  top: 105px;
+}
+
+#char_eye2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  left: 63%;
+  top: 105px;
+}
+
+#char_nose {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  background-color: black;
+  left: 47%;
+  top: 130px;
+}
+
+#infor h1 {
+  position: absolute;
+  font-size: 5em;
+  color: #666;
+  text-transform: uppercase;
+  top: 150px;
+  border-bottom: 10px solid #666;
+  padding-bottom: 8px;
+}
+
+#infor span {
+  position: absolute;
+  font-size: 4em;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.infor_class_1 {
+  top: 100px;
+}
+
+.infor_class_2 {
+  top: 330px;
+}
+
+.infor_class_3 {
+  top: 450px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  transform: rotate(90deg);
+  position: absolute;
+  transition: 2s;
+  top: 720px !important;
+  left: 180px !important;
+  border-bottom: #007aff;
+  border-right: #007aff;
+
+}
+
+.infor_util {
+  width: 40px;
+  height: 40px;
+  animation: arrowHover 2s infinite;
+
+}
+
+@keyframes arrowHover {
+  1% {
+    transform: translateY(-20px);
+    border-bottom-color: #6666;
+    border-right-color: #6666;
+  }
+
+  70% {
+    transform: translateY(none);
+    border-bottom-color: pink;
+    border-right-color: pink;
+  }
+}
+
+.infor_util:hover {
+  animation: none;
+}
+
+/* skill 패이지 시작 */
+
+#skill h1 {
+  font-family: "myfont2";
+  font-size: 60px;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+#skill_container {
+  position: relative;
+  left: 5%;
+  top: 230px;
+  width: 65%;
+  height: 75%;
+  margin: 0 auto;
+}
+
+#skill_front {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: -20px;
+}
+
+#skill_back {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  top: 0px;
+}
+
+.front_skills {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 20px;
+}
+
+.back_skills {
+  position: relative;
+  width: 100%;
+  height: 15%;
+  top: -50px;
+  margin-bottom: 20px;
+}
+
+.front_skills img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+}
+
+.back_skills img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 3px;
+
+}
+
+#skill_graph {
+  position: absolute;
+  width: 600px;
+  height: 20px;
+  background-color: rgba(90, 92, 92, 0.4);
+  top: 30px;
+  left: 100px;
+  border-radius: 50px;
+}
+
+.skill_graph_percent {
+  width: 0px;
+  transition: 1.5s;
+  background-color: cornflowerblue;
+  height: 20px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+
+/* skill 패이지 끝 */
+
+/* portfolio 패이지 시작 */
+#pot h1 {
+  font-family: "myfont2";
+  font-size: 60px;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+#pot_container {
+  left: 0%;
+  top: 250px;
+  margin: 0 auto;
+  position: relative;
+  width: 75%;
+  height: 75%;
+}
+
+#container_view {
+  position: relative;
+  width: 45%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+#container_view .swiper-slide {
+  width: 550px;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: rgba(300, 2, 31, 0.1);
+
+}
+
+#container_view_wrap {
+  display: flex;
+
+
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 90% !important;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+#port_info {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: relative;
+  z-index: 100000;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+#front {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  backface-visibility: hidden;
+}
+
+#front_img {
+  width: 80%;
+  height: 270px;
+  margin: 0 auto;
+}
+
+#front_img video {
+  width: 100%;
+  height: 100%;
+}
+
+#front_information {
+  width: 80%;
+  height: 230px;
+  margin: 0 auto;
+  position: relative;
+}
+#front_text{
+  
+  position: absolute;
+}
+#front_util{
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  top: 170px;
+}
+.git_java{
+  cursor: pointer;
+  width: 20%;
+  position: absolute;
+  left: 42%;
+  display: block;
+  transition: 0.5s;
+}
+
+.git_html{
+  cursor: pointer;
+  width: 20%;
+  position: absolute;
+  left: 15%;
+  transition: 0.5s;
+}
+.home{
+  cursor: pointer;
+  width: 7%;
+  position: absolute;
+  left: 70%;
+  transition: 05.s;
+}
+.git_java:hover,.git_html:hover,.home:hover{
+  animation: clickOn 1s infinite;
+ 
+  
+}
+#back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+}
+
+#port_util {
+  position: absolute;
+  width: 550px;
+  height: 80px;
+  bottom: 0px;
+  border-radius: 30px;
+}
+
+#pot_btn_left {
+  position: absolute;
+  top: 230px;
+  left: 3%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  border-bottom: 3px solid #007aff;
+  border-left: 3px solid #007aff;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+#pot_btn_right {
+  position: absolute;
+  top: 230px;
+  right: 3%;
+  width: 30px;
+  height: 30px;
+  transform: rotate(-45deg);
+  border-bottom: 3px solid #007aff;
+  border-right: 3px solid #007aff;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px)) !important;
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px)) !important;
+  display: inline-block;
+  border-radius: 50%;
+  background: var(--swiper-pagination-bullet-inactive-color, #000);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, .2);
+  margin-right: 10px !important;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  top: 530px;
+  left: 135px !important;
+  width: 100%;
+  position: absolute;
+}
+
+/* portfolio 패이지 끝 */
+
+/* aboutme 페이지 시작 */
+#aboutme h1 {
+  font-family: "myfont2";
+  font-size: 60px;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+#aboutme_container {
+  position: relative;
+  width: 65%;
+  top: 220px;
+  height: 70%;
+  margin: 0 auto;
+  
+}
+#aboutme_text{
+  position: relative;
+    top: 20px;
+    width: 100%;
+    height: 35%;
+}
+.span1,.span2,.span3{
+  position: absolute;
+  transition: all 0.5s;
+  display: none;
+}
+.span1{
+  left: 50%;
+  margin-left: -100px;
+  font-size: 40px;
+}
+.span2{
+  top: 60px;
+  left: 50%;
+  margin-left: -100px;
+}
+.span3{
+  top: 120px;
+  left: 50%;
+  margin-left: -100px;
+}
+#aboutme_contact{
+  width: 100%;
+    position: relative;
+    top: 10%;
+    height: 60%;
+    left: -150%;
+    transition: 0.5s;
+}
+.aboutme_me{
+  margin: 0 auto;
+  line-height: 6;
+  width: 58%;
+  height: 80px;
+  border-bottom: 1px solid gainsboro;
+}
+.aboutme_me img{
+  width: 40px;
+  margin-right: 50px;
+  animation: click 2s infinite;
+  cursor: pointer;
+}
+.aboutme_me span{
+  margin-left: 60px;
+}
+
+/* aboutme 페이지 끝 */
+
+/* #footer{
+  line-height: 15;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px !important;
+  background-color: mistyrose;
+  text-align: center;
+  display: none;
+} */
+
+/* 반응형 */
+@media only screen and (max-width: 1300px){
+  #aboutme h1,#skill h1,#pot h1{
+    font-size: 35px;
+  }
+}
