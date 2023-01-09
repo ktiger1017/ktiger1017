@@ -1069,24 +1069,29 @@ li:nth-child(2) {
     right: -10%;
   }
 
-  #aboutme_contact{
+  #aboutme_contact {
     font-size: 15px;
   }
-  .aboutme_me img{
+
+  .aboutme_me img {
     width: 35px;
   }
-  .aboutme_me{
+
+  .aboutme_me {
     width: 70%;
   }
 }
+
 @media only screen and (max-width: 1100px) {
-  .aboutme_me{
+  .aboutme_me {
     width: 80%;
   }
-  .aboutme_me img{
+
+  .aboutme_me img {
     width: 30px;
   }
 }
+
 @media only screen and (max-width: 1000px) {
 
   /*1000px 반응형*/
@@ -1179,10 +1184,12 @@ li:nth-child(2) {
     top: 18px;
     height: 10px;
   }
-  .aboutme_me{
+
+  .aboutme_me {
     width: 93%;
   }
-  .aboutme_me img{
+
+  .aboutme_me img {
     width: 28px;
   }
 }
@@ -1282,12 +1289,14 @@ li:nth-child(2) {
     width: 23px;
     height: 23px;
   }
-  .aboutme_me{
+
+  .aboutme_me {
     width: 108%;
   }
+
   .aboutme_me span {
     margin-left: 25px;
-}
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1328,15 +1337,18 @@ li:nth-child(2) {
   .home {
     width: 14%;
   }
-  .aboutme_me{
+
+  .aboutme_me {
     width: 105%;
   }
+
   .aboutme_me span {
     margin-left: -15px;
-}
-.span2{
-  top: 70px !important;
-}
+  }
+
+  .span2 {
+    top: 70px !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1380,154 +1392,188 @@ li:nth-child(2) {
     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 7px)) !important;
     height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 7px)) !important;
   }
-  .span2{
+
+  .span2 {
     top: 80px !important;
   }
 }
-@media only screen and (max-width: 499px){
+
+@media only screen and (max-width: 499px) {
   .infor_util {
     display: none;
+  }
 }
-}
-@media only screen and (max-width: 450px){
-#infor_text {
+
+@media only screen and (max-width: 450px) {
+  #infor_text {
     left: -155%;
     width: 120%;
-}
-}
-@media only screen and (max-width: 400px){
-  #infor_text {
-      left: -165%;
-      width: 120%;
   }
+}
+
+@media only screen and (max-width: 400px) {
+  #infor_text {
+    left: -165%;
+    width: 120%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #infor_text {
+    left: -175%;
+    width: 120%;
   }
 
- @media only screen and (max-width: 380px){
-  #infor_text {
-      left: -175%;
-      width: 120%;
-  }
   #char_back {
     left: 50px;
     top: 500px;
-}
-#header ul {
-  left: 75%;
+  }
+
+  #header ul {
+    left: 75%;
+  }
+
 }
 
-  } 
-  @media only screen and (max-width: 350px){
-    #infor_text {
-        left: -180%;
-        width: 120%;
-    }
-    #char_back {
-      left: 40px;
-      top: 500px;
+@media only screen and (max-width: 350px) {
+  #infor_text {
+    left: -180%;
+    width: 120%;
   }
-    } 
-    @media only screen and (max-width: 320px){
-      #infor_text {
-          left: -200%;
-          width: 150%;
-      }
-      #char_back {
-        left: 20px;
-        top: 500px;
-    }
-    #infor span {
-      font-size: 1.1em;
+
+  #char_back {
+    left: 40px;
+    top: 500px;
   }
+}
+
+@media only screen and (max-width: 320px) {
+  #infor_text {
+    left: -200%;
+    width: 150%;
+  }
+
+  #char_back {
+    left: 20px;
+    top: 500px;
+  }
+
+  #infor span {
+    font-size: 1.1em;
+  }
+
   #infor h1 {
     font-size: 2em;
     top: 35px;
-}
-#header ul {
-  left: 81%;
-}
-      } 
-      @media only screen and (max-width: 300px){
-        #infor_text {
-            left: -220%;
-            width: 150%;
-        }
-         #char_back {
-          left: 15px;
-          top: 500px;
-      }
-      #header ul {
-        left: 75%;
-      }
-      }
-      @media only screen and (max-width: 280px){
-        #infor_text {
-            left: -250%;
-            width: 150%;
-        }
-         #char_back {
-          left: 5px;
-          top: 460px;
-      }
-      #btn_top {
-        width: 25px;
-        height: 25px;
-        right: 4%;
-    }
-    .aboutme_me img {
-      width: 20px;
   }
+
+  #header ul {
+    left: 81%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #infor_text {
+    left: -220%;
+    width: 150%;
+  }
+
+  #char_back {
+    left: 15px;
+    top: 500px;
+  }
+
+  #header ul {
+    left: 75%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #infor_text {
+    left: -250%;
+    width: 150%;
+  }
+
+  #char_back {
+    left: 5px;
+    top: 460px;
+  }
+
+  #btn_top {
+    width: 25px;
+    height: 25px;
+    right: 4%;
+  }
+
+  .aboutme_me img {
+    width: 20px;
+  }
+
   #aboutme_contact {
     width: 130%;
     position: relative;
     top: -7%;
     height: 60%;
-    left: -20px;
+    left: -20px !important;
     transition: 0.5s;
     font-size: 10px;
-}
-.span3 {
-  top: 80px;
-  left: 50%;
-  margin-left: -100px;
-  font-size: 12px;
-}
-.span2 {
-  top: 50px !important;
-  font-size: 12px;
-}
-.span1 {
-  left: 50%;
-  margin-left: -100px;
-  font-size: 25px;
-}
-#aboutme_text {
-  position: relative;
-  top: 20px;
-  width: 120%;
-  height: 35%;
-}
-#container_view {
-  width: 100%;
-  top: -50px;
-}
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  }
 
-  width: 50%;
+  .span3 {
+    top: 80px;
+    left: 50%;
+    margin-left: -100px;
+    font-size: 12px;
+  }
+
+  .span2 {
+    top: 50px !important;
+    font-size: 12px;
+  }
+
+  .span1 {
+    left: 50%;
+    margin-left: -100px;
+    font-size: 25px;
+  }
+
+  #aboutme_text {
+    position: relative;
+    top: 20px;
+    width: 120%;
+    height: 35%;
+  }
+
+  #container_view {
+    width: 100%;
+    top: -50px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+
+    width: 50%;
+  }
+
+  .front_skills img {
+    width: 30px;
+    left: -20px;
+    height: 30px;
+  }
+
+  .back_skills img {
+    width: 30px;
+    height: 30px;
+    left: -20px;
+  }
+
+  #header ul {
+    left: 90%;
+  }
+
+  #header ul li {
+    font-size: 13px;
+  }
 }
-.front_skills img {
-  width: 30px;
-  left: -20px;
-  height: 30px;
-}
-.back_skills img {
-  width: 30px;
-  height: 30px;
-  left: -20px;
-}
-#header ul {
-  left: 90%;
-}
-#header ul li {
-  font-size: 13px;
-}
-      }
